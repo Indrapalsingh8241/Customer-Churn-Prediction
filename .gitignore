@@ -1,0 +1,19 @@
+# Virtual Environment
+.venv/
+# Environment Variables
+.env
+# SQLLite
+*.db
+*.sqlite3
+# Docker
+.docker/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary Files
+tmp/
+temp/
