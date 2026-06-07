@@ -183,16 +183,16 @@ if st.button("🚀 Predict Churn", use_container_width=True):
     }
 
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://customer-churn-prediction-rub6.onrender.com/predict",
         json=payload
     )
 
     result = response.json()
-
+    st.write(result)
     st.divider()
 
     st.subheader("📊 Prediction Result")
-
+    
     prob = result["churn_probability"]
 
     if result["churn"] == "Yes":
@@ -243,7 +243,7 @@ st.divider()
 st.header("📊 Previous Predictions")
 
 response = requests.get(
-    "http://127.0.0.1:8000/predictions"
+    "https://customer-churn-prediction-rub6.onrender.com/predictions"
 )
 
 if response.status_code == 200:
