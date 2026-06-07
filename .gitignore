@@ -1,11 +1,11 @@
-# Virtual Environment
+
 .venv/
-# Environment Variables
+
 .env
-# SQLLite
+
 *.db
 *.sqlite3
-# Docker
+
 .docker/
 
 # Python
